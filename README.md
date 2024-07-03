@@ -2,7 +2,7 @@
 
 A node.js application to generate Question Paper
 
-## Featurs
+## Features
 - Efforts have been made to ensure modularity and adherence to good conventions.
 - Extensible generator with support has beed added. For instance, `distributionBy` can take `subject`, `topic` and `difficulty`. Correspondingly the distribution needs to be changed. Examples have been added inside `index.js`.
 - Default params: `[100, { easy: 20, medium: 50, hard: 30 }, "difficulty"]`
