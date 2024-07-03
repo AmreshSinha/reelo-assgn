@@ -1,0 +1,172 @@
+{
+  "paper": [
+    {
+      "question": "RAM stands for Random Access Memory.",
+      "subject": "Science",
+      "topic": "Computers",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "In the programming language Java, which of these keywords would you put on a variable to make sure it doesn&#039;t get modified?",
+      "subject": "Science",
+      "topic": "Computers",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "In any programming language, what is the most common way to iterate through an array?",
+      "subject": "Science",
+      "topic": "Computers",
+      "difficulty": "easy",
+      "marks": 3
+    },
+    {
+      "question": "Which company was established on April 1st, 1976 by Steve Jobs, Steve Wozniak and Ronald Wayne?",
+      "subject": "Science",
+      "topic": "Computers",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "What does the Prt Sc button do?",
+      "subject": "Science",
+      "topic": "Computers",
+      "difficulty": "easy",
+      "marks": 2
+    },
+    {
+      "question": "What is the domain name for the country Tuvalu?",
+      "subject": "Science",
+      "topic": "Computers",
+      "difficulty": "easy",
+      "marks": 2
+    },
+    {
+      "question": "In most programming languages, the operator ++ is equivalent to the statement &quot;+= 1&quot;.",
+      "subject": "Science",
+      "topic": "Computers",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "What does CPU stand for?",
+      "subject": "Science",
+      "topic": "Computers",
+      "difficulty": "easy",
+      "marks": 3
+    },
+    {
+      "question": "The logo for Snapchat is a Bell.",
+      "subject": "Science",
+      "topic": "Computers",
+      "difficulty": "easy",
+      "marks": 2
+    },
+    {
+      "question": "What language does Node.js use?",
+      "subject": "Science",
+      "topic": "Computers",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "What does LTS stand for in the software market?",
+      "subject": "Science",
+      "topic": "Computers",
+      "difficulty": "easy",
+      "marks": 3
+    },
+    {
+      "question": "What does the &#039;S&#039; in the RSA encryption algorithm stand for?",
+      "subject": "Science",
+      "topic": "Computers",
+      "difficulty": "medium",
+      "marks": 6
+    },
+    {
+      "question": "In the server hosting industry IaaS stands for...",
+      "subject": "Science",
+      "topic": "Computers",
+      "difficulty": "medium",
+      "marks": 4
+    },
+    {
+      "question": "Which coding language was the #1 programming language in terms of usage on GitHub in 2015?",
+      "subject": "Science",
+      "topic": "Computers",
+      "difficulty": "medium",
+      "marks": 5
+    },
+    {
+      "question": "Which of these people was NOT a founder of Apple Inc?",
+      "subject": "Science",
+      "topic": "Computers",
+      "difficulty": "medium",
+      "marks": 4
+    },
+    {
+      "question": "The teapot often seen in many 3D modeling applications is called what?",
+      "subject": "Science",
+      "topic": "Computers",
+      "difficulty": "medium",
+      "marks": 6
+    },
+    {
+      "question": "On which computer hardware device is the BIOS chip located?",
+      "subject": "Science",
+      "topic": "Computers",
+      "difficulty": "medium",
+      "marks": 6
+    },
+    {
+      "question": "Which of the following languages is used as a scripting language in the Unity 3D game engine?",
+      "subject": "Science",
+      "topic": "Computers",
+      "difficulty": "medium",
+      "marks": 4
+    },
+    {
+      "question": "When did the online streaming service &quot;Mixer&quot; launch?",
+      "subject": "Science",
+      "topic": "Computers",
+      "difficulty": "medium",
+      "marks": 5
+    },
+    {
+      "question": "How many bits make up the significand portion of a single precision floating point number?",
+      "subject": "Science",
+      "topic": "Computers",
+      "difficulty": "medium",
+      "marks": 4
+    },
+    {
+      "question": "All program codes have to be compiled into an executable file in order to be run. This file can then be executed on any machine.",
+      "subject": "Science",
+      "topic": "Computers",
+      "difficulty": "medium",
+      "marks": 5
+    },
+    {
+      "question": "What internet protocol was documented in RFC 1459?",
+      "subject": "Science",
+      "topic": "Computers",
+      "difficulty": "hard",
+      "marks": 7
+    },
+    {
+      "question": "The IBM PC used an Intel 8008 microprocessor clocked at 4.77 MHz and 8 kilobytes of memory.",
+      "subject": "Science",
+      "topic": "Computers",
+      "difficulty": "hard",
+      "marks": 7
+    },
+    {
+      "question": "What does the International System of Quantities refer 1024 bytes as?",
+      "subject": "Science",
+      "topic": "Computers",
+      "difficulty": "hard",
+      "marks": 10
+    }
+  ]
+}
