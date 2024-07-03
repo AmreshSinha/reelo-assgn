@@ -27,7 +27,7 @@ A node.js application to generate Question Paper
 - Install yarn: `npm i -g yarn`
 - Install dependecies: `yarn`
 - Generate Paper: `yarn generate`
-- To generate for a new total Marks and difficulty distribution add the params in `generate()` function in `./index.js` file and rerun the generate command
+- To generate for a new total Marks and difficulty distribution add the params in `generate()` function in `./index.js` file and rerun the generate command. Examples have beend added below the `params` var initialisation.
   ```javascript
     ...
      * @param {"difficulty" | "subject" | "topic"} distributionBy (optional)
