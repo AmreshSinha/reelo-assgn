@@ -2,18 +2,23 @@ const papergen = require("./controllers/papergen");
 const pdfgen = require("./utils/pdfgen");
 const questionsverif = require("./utils/questionsverif");
 
+/**
+ * [totalMarks, distribution, distributionBy]
+ * @param {number} totalMarks (optional)
+ * @param {object} distribution (optional)
+ * @param {"difficulty" | "subject" | "topic"} distributionBy (optional)
+ */
+const params = [100, { easy: 20, medium: 50, hard: 30 }, "difficulty"]
+// const params = [150, { easy: 20, medium: 50, hard: 30 }, "difficulty"]
+// const params = [100, { Science: 40, "General Knowledge": 60 }, "subject"]
+
 const paperObj = {
-  // generate() params ->
-  // totalMarks: number,
-  // difficultyDistribution: { Easy: number, Medium: number, Hard: number },
-  // takes in default value if params not passed
-  paper: papergen.generate(),
-  // paper: papergen.generate(200, { Easy: 20, Medium: 50, Hard: 30 }),
+  paper: papergen.generate(...params)
 };
 
-pdfgen.generatePDF(paperObj.paper);
+pdfgen.generatePDF(paperObj.paper, params[2] || "difficulty");
 
-Object.entries(questionsverif.verify(paperObj.paper)).map((questions, i) => {
+Object.entries(questionsverif.verify(paperObj.paper, params[2] || "difficulty")).map((questions, i) => {
   console.log(
     `Difficulty: ${questions[0]}, Total Questions: ${questions[1].totalQuestions}`
   );

@@ -5,8 +5,8 @@ const _ = require("lodash");
  * @param {object[]} questions 
  * @returns object
  */
-function verify(questions) {
-  const questionsByDifficulty = _.groupBy(questions, "difficulty");
+function verify(questions, distributionBy = "difficulty") {
+  const questionsByDifficulty = _.groupBy(questions, distributionBy);
   
   const result = {}
 

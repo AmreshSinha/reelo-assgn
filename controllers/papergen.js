@@ -42,32 +42,27 @@ function subQuestions(questions, marks) {
 /**
  * Generate questions for the paper with a given distribution
  * @param {number} totalMarks
- * @param {object} difficultyDistribution
+ * @param {object} distribution
+ * @param {"difficulty" | "subject" | "topic"} distributionBy
  * @returns {object[]} finalQuestions
  */
 function generate(
   totalMarks = 100,
-  difficultyDistribution = { Easy: 20, Medium: 50, Hard: 30 }
+  distribution = { easy: 20, medium: 50, hard: 30 },
+  distributionBy = "difficulty"
 ) {
   const questions = questionsJSON.questions;
-  const easyQuestions = _.filter(questions, { difficulty: "easy" });
-  const mediumQuestions = _.filter(questions, { difficulty: "medium" });
-  const hardQuestions = _.filter(questions, { difficulty: "hard" });
 
+  const questionsByDistribution = _.groupBy(questions, distributionBy);
   const finalQuestions = [];
-  return finalQuestions.concat(
-    subQuestions(
-      easyQuestions,
-      (totalMarks * difficultyDistribution.Easy) / 100
-    ),
-    subQuestions(
-      mediumQuestions,
-      (totalMarks * difficultyDistribution.Medium) / 100
-    ),
-    subQuestions(
-      hardQuestions,
-      (totalMarks * difficultyDistribution.Hard) / 100
-    )
-  );
+  Object.entries(questionsByDistribution).forEach(([key, value]) => {
+    const subQuestionsArray = subQuestions(
+      value,
+      (totalMarks * distribution[key]) / 100
+    );
+    finalQuestions.push(...subQuestionsArray);
+  });
+
+  return finalQuestions;
 }
 exports.generate = generate;

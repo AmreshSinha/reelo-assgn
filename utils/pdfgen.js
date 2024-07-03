@@ -7,7 +7,7 @@ const path = require("path");
  * Generates PDF from questions, groups by difficulty from easy to hard
  * @param {object[]} questions
  */
-function generatePDF(questions) {
+function generatePDF(questions, distributionBy = "difficulty") {
   const doc = new PDFDocument();
   doc.pipe(
     fs.createWriteStream(path.join(__dirname, "..", "QuestionPaper.pdf"))
@@ -18,10 +18,10 @@ function generatePDF(questions) {
 
   doc.moveDown();
 
-  const groupedPaper = _.groupBy(questions, "difficulty");
-  const difficulties = Object.keys(groupedPaper);
+  const groupedPaper = _.groupBy(questions, distributionBy);
+  const distributionByKeys = Object.keys(groupedPaper);
 
-  difficulties.forEach((difficulty) => {
+  distributionByKeys.forEach((difficulty) => {
     doc.moveDown();
     doc.fontSize(20).text(difficulty, {
       align: "center",
