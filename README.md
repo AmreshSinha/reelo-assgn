@@ -5,6 +5,7 @@ A node.js application to generate Question Paper
 - Sample seed data is already generated and the code to genereate it is inside seed folder (no need to run as already generated)
 - Sample seed data location: `./data/questions.json`, total questions: `180`, easy: 60, medium: 60, hard: 60
 - Controller for generating question paper json: `./controllers/papergen.js`, returns an object with questions array inside it
+  - Hashmap is being used to fit the number of questions according to the target marks for that difficulty similar to "Find a subarray whose sum is equal to a certain input value"
 - To generate Paper PDF pdfgen has been added: `./utils/pdfgen.js`
 
 ## Extra deps used
