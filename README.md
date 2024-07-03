@@ -2,11 +2,11 @@
 
 A node.js application to generate Question Paper
 
-- Sample seed data is already generated and the code to genereate it is inside seed folder (no need to run as already generated)
+- Sample seed data is already generated and the code to generate it is inside seed folder (no need to run as it's already generated)
 - Sample seed data location: `./data/questions.json`, total questions: `180`, easy: 60, medium: 60, hard: 60
 - Controller for generating question paper json: `./controllers/papergen.js`, returns an object with questions array inside it
-  - Hashmap is being used to fit the number of questions according to the target marks for that difficulty similar to "Find a subarray whose sum is equal to a certain input value"
-- To generate Paper PDF pdfgen has been added: `./utils/pdfgen.js`
+  - Hashmap is being used to fit the number of questions according to the target marks for that difficulty similar to "Find a subarray whose sum is equal to a certain input value" problem
+- To generate Paper PDF pdfgen util has been added: `./utils/pdfgen.js`
 
 ## Extra deps used
 
@@ -19,7 +19,19 @@ A node.js application to generate Question Paper
 - Install dependecies: `yarn`
 - Generate Paper: `yarn generate`
 - To generate for a new total Marks and difficulty distribution add the params in `generate()` function in `./index.js` file and rerun the generate command
+  ```javascript
+  const paperObj = {
+    ...
+    // generate() params ->
+    // totalMarks: number,
+    // difficultyDistribution: { Easy: number, Medium: number, Hard: number },
+    // takes in default value if params not passed
+    paper: papergen.generate(200, { Easy: 20, Medium: 50, Hard: 30 }),
+    ...
+  };
+  ```
 
 ## Output
+
 - Question Paper PDF: `./QuestionPaper.pdf`
 - Question Paper JSON: `./paper.json`
